@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <style>
+    /* General CSS Layout */
+
+
+
+    @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+    * {
+      font-family: 'Josefin Sans', sans-serif;
+      color: whitesmoke;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: black;
+      color: whitesmoke;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    h2,
+    .footer a {
+      color: whitesmoke;
+      text-align: center;
+    }
+
+    h3,
+    p,
+    h5,
+    #description {
+      color: whitesmoke
+    }
+
+
+
+    .Menu {
+      padding-bottom: 20px;
+      margin-top: -5px;
+    }
+
+    .footer {
+      background-color: rgb(60, 74, 85);
+      text-align: center;
+      color: whitesmoke;
+    }
+
+    i {
+      color: #ffffff7a;
+    }
+
+    /* General CSS Layout */
+
+
+    /* Class CSS */
+
+    .navright i:hover {
+      color: rgb(195, 132, 226);
+    }
+
+
+
+
+
+    .card-text,
+    .card-title,
+    select,
+    h6#product,
+    option,
+    input {
+      color: black;
+    }
+
+
+
+
+
+
+    #Map {
+      color: #fcfcfc;
+      font-size: larger;
+      text-align: center;
+      border-radius: 30px;
+      padding: 5px;
+      border-color: #fcfcfc;
+      margin: 20px 0px 20px 0px;
+    }
+
+    #Map_Text {
+
+      padding-top: 90px;
+
+    }
+
+    #Map_Text h3 {
+      margin-top: 20px;
+      color: rgb(255, 255, 255);
+      font-size: xx-large;
+    }
+
+    #Map_Text p {
+      color: rgb(255, 255, 255);
+      font-size: medium;
+    }
+
+    .image {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+    .image__img {
+      display: block;
+      width: 100%;
+    }
+
+    .image__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      color: #ffffff;
+      font-family: 'Quicksand', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.25s;
+    }
+
+    .image__overlay--blur {
+      backdrop-filter: blur(2px);
+    }
+
+    .image__overlay--primary {
+      background: #ffffff37;
+    }
+
+    .image__overlay>* {
+      transform: translateY(20px);
+      transition: transform 0.25s;
+    }
+
+    .image__overlay:hover {
+      opacity: 2;
+    }
+
+    .image__overlay:hover>* {
+      transform: translateY(0);
+    }
+
+    .image__title {
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    .image__description {
+      font-size: 1.25em;
+      margin-top: 0.25em;
+    }
+
+
+    .container {
+      position: relative;
+    }
+
+    #divL {
+      border-radius: 20px;
+      margin: 0px 0px 0px 300px;
+    }
+
+    #divR {
+      border-radius: 20px;
+      float: left;
+    }
+
+    .row {
+      margin-top: 20px;
+    }
+
+    #Foot {
+      color: rgb(198, 164, 231);
+    }
+
+    #Button {
+      background-color: rgb(223, 61, 61);
+      border-radius: 20px;
+      text-decoration: none;
+      margin-left: 150px;
+      color: aliceblue;
+    }
+
+    #nav_button {
+      color: white;
+
+    }
+
+
+
+    #input {
+      color: black;
+      display: block;
+      width: 100%;
+      margin: 10px 0px 10px 0px;
+      padding: 10px 10px 10px 10px;
+    }
+
+    #input50 {
+      color: black;
+      display: block;
+      width: 50%;
+      margin: 10px 0px 10px 0px;
+      padding: 10px 10px 10px 10px;
+    }
+
+    hr {
+      background-color: aliceblue;
+    }
+
+    .footer a:hover,
+    hover {
+      color: rgb(204, 105, 204);
+      text-decoration: none;
+    }
+
+    .btn-lg:hover {
+      color: rgb(204, 105, 204);
+      background-color: #0495c9;
+      border-color: #357ebd;
+    }
+
+    th,
+    tr {
+      color: #499cba;
+      text-align: center;
+      font-size: large;
+      padding: 20px 20px 20px 20px;
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 75vh;
+      /* Adjust the height as per your requirement */
+    }
+  </style>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+</head>
+<title>Detect and Result</title>
+
+</head>
+
+<body style=" background-color: rgb(35, 35, 31)">
+  <div>
+    <h1>Campus Management System</h1>
+  </div>
+
+  <div class="Menu">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index">Camera View</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="detect1">Detection and Result</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="car_plate_number" target="_blank">json History</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="logbooks" >Log book</a>
+          </li>
+
+
+        </ul>
+
+
+      </div>
+    </nav>
+  </div>
+  
+    
+
+  <div class="container mt-5">
+    <h2>List of Logbooks</h2>
+    <div class="row">
+      {% for text_file in text_files %}
+      <div class="col-md-4 mb-4">
+        <div class="card">
+            
+          <div class="card-body">
+            
+            <h5 class="card-title">{{ text_file }}</h5>
+            <a href="{{ url_for('view_logbook', filename=text_file) }}" class="btn btn-primary">View Content</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+
+  <div class="footer">
+    <div class="container-fluid">
+
+
+
+
+    </div>
+    <h6>© 2023 Campus Management System. All Rights Reserved.</h6>
+  </div>
+
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

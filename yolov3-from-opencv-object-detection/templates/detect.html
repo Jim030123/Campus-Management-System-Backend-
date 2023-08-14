@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detected Car Plate</title>
+</head>
+<body>
+    <h1>Detected Car Plate</h1>
+    {% if car_plate_number %}
+        <p>{{ car_plate_number }}</p>
+        {% if is_data_in_firebase %}
+            <p>True</p>
+        {% else %}
+            <p>False</p>
+        {% endif %}
+    {% else %}
+        <p>No car plate detected</p>
+    {% endif %}
+</body>
+</html>
