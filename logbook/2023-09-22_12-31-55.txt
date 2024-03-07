@@ -1,0 +1,2 @@
+2023-09-22 12:32:43 - Car Plate Number: JSB678 
+Gate Status (if True gate open): False
